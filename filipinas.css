@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html{
+    font-size: 14px;
+    height: 100%;
+}
+body{
+    height: 100vh;
+    
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgb(60, 50, 50);
+}
+/*navegacion*/
+header{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid white;
+    opacity: 0.6;
+    display: flex;
+    justify-content: start;
+    background: linear-gradient(to right, rgb(163, 24, 24), rgb(235, 127, 44) );
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: 3px solid rgb(197, 162, 36);
+    margin: 1px 40px;
+}
+h2{
+    font-size: 2rem;
+    color: white;
+}
+.nav{
+    display: flex;
+   justify-content: start;
+   padding: 5px 5px;
+}
+.nav-chield{
+    display: flex;
+    display: inline-block;
+   padding: 5px 30px;
+   border-radius: 10px;
+   border: 1px solid rgb(210, 121, 44);
+}
+.nav-chield:hover{
+    background: rgb(171, 6, 6);
+    border-radius: 10px;
+    border-bottom: 2px solid white;
+}
+/* portada */
+.seccion{
+    margin: 40px auto;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 73%;
+}
+.portada{
+    width: 60%;
+    border-radius: 50%;
+    align-items: center;
+}
+.portada:hover{
+    opacity: 0.9;
+    border: 3px solid rgb(176, 155, 155);
+}
+h3{
+    font-size: 24px;
+    color: rgb(41, 36, 36);
+}
+/*responsive*/
+@media (max-width: 600px){
+    h2{
+     font-size: 1rem;
+    }
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
+    header{
+        height: 40px;
+    }
+    .portada{
+        width: 80%;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+    .nav-chield{
+       padding: 2px 10px;
+    }
+    
+}
