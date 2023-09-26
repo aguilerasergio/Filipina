@@ -10,7 +10,7 @@ html{
 }
 body{
     height: 100vh;
-    
+    text-align: center;
 }
 footer{
     position: absolute;
@@ -58,22 +58,30 @@ h2{
 }
 /* portada */
 .seccion{
-    margin: 40px auto;
+    margin: 40px 40px;
     display: flex;
-    flex-direction:column ;
-    align-items: center;
+    justify-content: space-around;
     text-align: center;
-    width: 50%;
-    height: 73%;
+   
 }
 .portada{
-    width: 60%;
+    border: 1px solid white;
+    display: flex;
+    display: inline-block;
+    margin-left: 30px;
+    width: 30%;
     border-radius: 50%;
-    align-items: center;
 }
 .portada:hover{
     opacity: 0.9;
     border: 3px solid rgb(176, 155, 155);
+}
+.fotos{
+    border: 1px solid white;
+    display: flex;
+    display: inline-block;
+    width: 30%;
+    border-radius: 50%;
 }
 h3{
     font-size: 24px;
