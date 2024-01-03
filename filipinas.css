@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+a{
     text-decoration: none;
 }
 html{
@@ -10,46 +12,51 @@ html{
 }
 body{
     height: 100vh;
-    text-align: center;
+    text-decoration: none;
 }
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: rgb(60, 50, 50);
-}
+
+
 /*navegacion*/
 header{
     width: 100%;
     height: 60px;
     border-bottom: 2px solid white;
-    opacity: 0.6;
     display: flex;
     justify-content: start;
-    background: linear-gradient(to right, rgb(163, 24, 24), rgb(235, 127, 44) );
+    font-size: 2px;
+    color: whitesmoke;
+    background: linear-gradient(to right, rgb(79, 12, 12), rgb(235, 127, 44));
+    margin-bottom: 40px;
 }
 .logo{
-    width: 50px;
+    width: 100px;
     height: 50px;
-    border-radius: 30px;
-    border: 3px solid rgb(197, 162, 36);
-    margin: 1px 40px;
+    margin: 3px 40px;
 }
-h2{
-    font-size: 2rem;
-    color: white;
+.logo:hover{
+    background: rgb(171, 6, 6);
+    border-radius: 10px;
+    border-bottom: 2px solid white;
 }
 .nav{
     display: flex;
-   justify-content: start;
+   justify-content: space-evenly;
    padding: 5px 5px;
+   font-size: 2rem;
+   color: whitesmoke;
 }
-.nav-chield{
+ a{
+   border-radius: 10px;
+   text-decoration: none;
+  }
+  .nav-chield{
     display: flex;
     display: inline-block;
-   padding: 5px 30px;
-   border-radius: 10px;
-   border: 1px solid rgb(210, 121, 44);
+    border-radius: 10px;
+    font-size: 2rem;
+    color: whitesmoke;
+    padding: 5px 30px;
+    border: 1px solid rgb(210, 121, 44);
 }
 .nav-chield:hover{
     background: rgb(171, 6, 6);
@@ -57,55 +64,105 @@ h2{
     border-bottom: 2px solid white;
 }
 /* portada */
+
 .seccion{
-    margin: 40px 40px;
+    margin: 10px 50px;
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-   
-}
+    justify-content: space-evenly;
+   }
 .portada{
-    border: 1px solid white;
+    border: 1px solid rgb(229, 166, 65);
     display: flex;
     display: inline-block;
-    margin-left: 30px;
-    width: 30%;
+    width: 35%;
     border-radius: 50%;
 }
-.portada:hover{
+.fotos:hover{
     opacity: 0.9;
-    border: 3px solid rgb(176, 155, 155);
+    border: 3px solid rgb(67, 48, 48);
 }
-.fotos{
-    border: 1px solid white;
-    display: flex;
-    display: inline-block;
-    width: 30%;
+
+ .portadatransp{
+    width: 460px;
     border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 730px;
+    translate: 3ms;
+    opacity: 0;
+ }
+
+ .portadatransp{
+    z-index: 150;
+ }
+ .portadatransp:hover{
+     opacity: 1;
+     translate: 2s;
+ }
+
+footer{
+    width: 100%;
+    color: rgb(60, 50, 50);
 }
-h3{
-    font-size: 24px;
-    color: rgb(41, 36, 36);
+h4.pie{
+    position: absolute;
+    bottom: 0;
+    margin-left: 40px;
 }
+
 /*responsive*/
-@media (max-width: 600px){
-    h2{
-     font-size: 1rem;
+@media (max-width: 678px){
+    html{
+     font-size: 10px;
     }
     .logo{
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
     header{
         height: 40px;
+       margin-bottom: 10px; 
+    }
+    .seccion{
+        margin-bottom: 20px;
     }
     .portada{
-        width: 80%;
+        width: 70%;
         border-radius: 50%;
         margin-top: 50px;
     }
+   
     .nav-chield{
        padding: 2px 10px;
     }
+     .fotos{
+        display: none;
+     }
+    .navDos{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin: 3px auto;
+        align-items: center;
+    }
+    .boton{
+        display: flex;
+        display: inline-block;
+        font-size: 2rem;
+        padding: 3px 15px;
+        border: 1px solid rgb(216, 109, 9);
+        border-radius: 15px;
+        background: rgb(225, 146, 86);
+        color: white;
+    }
+    .boton:hover{
+        background: rgb(171, 6, 6);
+        border-radius: 10px;
+        border-bottom: 2px solid white;
+    }
+    .navUno{
+        display: none;
+    }
+   
     
 }
